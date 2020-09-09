@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	html5up.net | @n33co
+	modified by Hollis for personal use
+-->
+<html>
+	<head>
+		<title>Trampolin and Relativity</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+		  <link rel="shortcut icon" href="../appleicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="../appleicons/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="../appleicons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="../appleicons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../appleicons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="../appleicons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="../appleicons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="../appleicons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="../appleicons/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../appleicons/apple-touch-icon-180x180.png" />
+		<link rel="mask-icon" href="../Liu.svg" color="#000000">
+	</head>
+	<body>
+
+<div id="main">
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Trampolin and General Relativity<br/>
+								<h4> PBA Final Project Proposal by Hollis Liu</h4>
+							</header>
+							<p>
+								I saw a video when I was taking relativity in college: a neat way to illustrate the
+								convoluted concept of general relativity using everyday objects such as elastic fabric and plastic balls.
+								The original video is linked at the end of this page. Inspired by this experiment, I created an iOS app using the
+								SceneKit engine as shown on the right:
+							</p>
+
+							<p>
+								The problem with my app is that the gravity bending effect is not physically based rendered as the case in the video. The curving
+								effect is merely a gaussian computed based on the postions and "masses" of astronomical objects. As a result the animation
+								is not life-like or playful at all.
+
+								My final project idea is thus to build a brand new simulation using physically based animation techniques.
+							</p>
+
+								Detailed requirements of the project:
+							<br/><br/>
+								<ul>
+								  <li>The spacetime fabric is modeled using struts so that it behaves like real fabric</li>
+								  <li>Balls representing planets can be dropped intro the spacetime fabric (trampolin) with mouse clicks</li>
+								  <li>Big balls will bounce and attract each other</li>
+								  <li>Small balls will either bounce, roll or collide with other balls along the curvature</li>
+								</ul>
+
+								Here is the original video:
+								<br/><br/>
+
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/MTY1Kje0yLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								<br/><br/>
+							<a href="../index.html" class="button">Go Back Home</a>
+
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit"><img src="https://github.com/hollisliu/Spacetime-Rhapsody/raw/master/intro.gif"></span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+		<!-- Footer -->
+			<div id="footer">
+				<div id="particles">
+				<ul class="icons">
+					<li><a href="https://twitter.com/Hollis0807" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.facebook.com/hollisliu" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.linkedin.com/in/hanjie-hollis-liu-99589377" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/hollisliu" class="icon alt fa-github"><span class="label" target="_blank">GitHub</span></a></li>
+					<li><a href="mailto:hollis0807@gmail.com?Subject=Request%20from%20Your%20Website" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Hollis Liu 2018</li><li>Design Inspired by: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/jquery.particleground.min.js"></script>
+			<script src="../assets/js/particle.js"></script>
+
+			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-81427999-1', 'auto');
+			  ga('send', 'pageview');
+			</script>
+
+	</body>
+</html>

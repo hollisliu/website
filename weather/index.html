@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="demo">
+	<head>
+		<title>Weather Lookup</title>
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+
+	<body>
+        <br/><br/><br/><br/>
+    <section class="container">
+        <header class="major special">
+        <h1>Current Weather Lookup</h1>
+
+		<div ng-controller="weather">
+            <div class="center">
+                <input maxlength="5" type="text" placeholder="Enter a Zipcode to Start" ng-model="zip"/>
+                <p>The zip you're looking for: {{zip}}</p>
+            </div>
+			<p>The current weather condition in <b>{{today.name}}</b> is
+                <h2>{{today.weather[0].main}}</h2></p>
+            <p>The temperature is <h2>{{today.main.temp * (9/5) - 459.67459 | number:0}} &deg;F</h2></p>
+            <p>Max temperature for today is: {{today.main.temp_min * (9/5) - 459.67459 | number:0}} &deg;F</p>
+            <p>Min temperature for today is: {{today.main.temp_max * (9/5) - 459.67459 | number:0}} &deg;F</p>
+
+		</div>
+        </header>
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+        <script src="demo.js"></script>
+	</body>
+</html>
